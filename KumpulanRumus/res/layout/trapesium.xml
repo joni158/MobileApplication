@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewSisi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sisi 1 :" />
+
+    <EditText
+        android:id="@+id/editTextSisi1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSisi1"
+        android:layout_below="@+id/textViewSisi1"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewSisi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSisi1"
+        android:layout_below="@+id/editTextSisi1"
+        android:layout_marginTop="10dp"
+        android:text="Sisi 2 :" />
+
+    <EditText
+        android:id="@+id/editTextSisi2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSisi2"
+        android:layout_below="@+id/textViewSisi2"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:id="@+id/textViewSisi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSisi2"
+        android:layout_below="@+id/editTextSisi2"
+        android:layout_marginTop="10dp"
+        android:text="Sisi 3 :" />
+
+    <EditText
+        android:id="@+id/editTextSisi3"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSisi3"
+        android:layout_below="@+id/textViewSisi3"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:id="@+id/textViewSisi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSisi3"
+        android:layout_below="@+id/editTextSisi3"
+        android:layout_marginTop="10dp"
+        android:text="Sisi 4 :" />
+
+    <EditText
+        android:id="@+id/editTextSisi4"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSisi4"
+        android:layout_below="@+id/textViewSisi4"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonKeliling"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSisi4"
+        android:layout_below="@+id/editTextSisi4"
+        android:layout_marginTop="10dp"
+        android:text="Keliling" />
+    
+    <TextView
+        android:id="@+id/textViewKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonKeliling"
+        android:layout_below="@+id/buttonKeliling"
+        android:layout_marginTop="15dp"
+        android:text="" />
+    
+    <TextView
+        android:id="@+id/textViewSisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="137dp"
+        android:text="Jml Sisi Sejajar :" />
+
+    <EditText
+        android:id="@+id/editTextJmlSisi"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSisi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/editTextSisi1"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    
+    <TextView
+        android:id="@+id/textViewTinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextJmlSisi"
+        android:layout_marginLeft="137dp"
+        android:text="Tinggi :" />
+
+    <EditText
+        android:id="@+id/editTextTinggi"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTinggi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/editTextSisi2"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    
+    <Button
+        android:id="@+id/buttonLuas"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/buttonKeliling"
+        android:layout_below="@+id/editTextTinggi"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="16dp"
+        android:text="Luas" />
+
+     <TextView
+        android:id="@+id/textViewLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLuas"
+        android:layout_toRightOf="@+id/editTextSisi3"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="15dp"
+        android:text="" />
+
+</RelativeLayout>

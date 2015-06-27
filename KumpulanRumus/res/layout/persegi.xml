@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewSisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sisi :" />
+
+    <EditText
+        android:id="@+id/editTextSisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewSisi"
+        android:layout_below="@+id/textViewSisi"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonKeliling"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSisi"
+        android:layout_below="@+id/editTextSisi"
+        android:layout_marginTop="16dp"
+        android:text="Keliling" />
+    
+    <Button
+        android:id="@+id/buttonLuas"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonKeliling"
+        android:layout_below="@+id/editTextSisi"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="70dp"
+        android:text="Luas" />
+
+    <TextView
+        android:id="@+id/textViewKeliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonKeliling"
+        android:layout_below="@+id/buttonKeliling"
+        android:layout_marginTop="16dp"
+        android:text="" />
+    
+     <TextView
+        android:id="@+id/textViewLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLuas"
+        android:layout_toRightOf="@+id/textViewKeliling"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:text="" />
+
+</RelativeLayout>
